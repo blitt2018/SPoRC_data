@@ -2,20 +2,20 @@ Welcome to the github repository for the creation of SPoRC: the Structured Podca
 
 You can access our data [here](https://huggingface.co/datasets/blitt/SPoRC), our data processing pipeline [here](https://github.com/blitt2018/SPoRC_data), and our publication [here](FILL_IN).
 
-SPoRC captures the inherently multi-modal nature of podcast data, with transcripts and metadata for over 1.1M episodes and speaker-turn and audio-feature data for over 380K episodes. As shown below, these features can be combined to provide rich insight into human communication:  
+SPoRC captures the inherently multi-modal nature of podcast data, with transcripts and metadata for over 1.1M episodes and speaker-turn and audio-feature data for over 370K episodes. As shown below, these features can be combined to provide rich insight into human communication:  
 
 <p align="center">
-  <img src="/figures/diarizationVisualization.png?raw=true" width=80% height=80%>
+  <img src="/figures/diarizationVisualization.png?raw=true">
   <em>Speaker-pitch information overlayed with speaker-turn information.</em>
 </p>
 
 <p align="center">
-  <img src="/figures/transcriptHighlightingFigure.png?raw=true" width=80% height=80%>
+  <img src="/figures/transcriptHighlightingFigure.png?raw=true">
   <em>A podcast transcript colored by speaker turns. Speaker overlap is depicted with black text.</em>
 </p>
 
 <p align="center">
-  <img src="/figures/pitchDemo.png?raw=true" width=80% height=80%>
+  <img src="/figures/pitchDemo.png?raw=true">
   <em>Speaker-pitch information displayed alongside token-level transcript information.</em>
 </p>
 
