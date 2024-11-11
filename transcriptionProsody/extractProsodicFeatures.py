@@ -31,20 +31,3 @@ df = smile.process_signal(
 )
 df.to_csv(OUT_PATH + "LowLevel.csv")
 
-"""
-smile = opensmile.Smile(
-    feature_set=opensmile.FeatureSet.eGeMAPSv02,
-    feature_level=opensmile.FeatureLevel.Functionals,
-    num_workers=2, 
-    multiprocessing=True
-) 
-
-oldTime = time.time()
-df = smile.process_signal(
-    signal,
-    sampling_rate
-)
-df.to_csv(OUT_PATH + "Functionals.csv")
-print(f"{time.time() - oldTime}")
-"""
-
