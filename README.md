@@ -2,6 +2,23 @@ Welcome to the github repository for the creation of SPoRC: the Structured Podca
 
 You can access our data [here](https://huggingface.co/datasets/blitt/SPoRC), our data processing pipeline [here](https://github.com/blitt2018/SPoRC_data), and our publication [here](FILL_IN).
 
+SPoRC captures the inherently multi-modal nature of podcast data, with transcripts and metadata for over 1.1M episodes and speaker-turn and audio-feature data for over 380K episodes. As shown below, these features can be combined to provide rich insight into human communication:  
+
+<p align="center">
+  <img src="/figures/diarizationVisualization.png?raw=true" width=80% height=80%>
+  <em>Speaker-pitch information overlayed with speaker-turn information.</em>
+</p>
+
+<p align="center">
+  <img src="/figures/transcriptHighlightingFigure.png?raw=true" width=80% height=80%>
+  <em>A podcast transcript colored by speaker turns. Speaker overlap is depicted with black text.</em>
+</p>
+
+<p align="center">
+  <img src="/figures/pitchDemo.png?raw=true" width=80% height=80%>
+  <em>Speaker-pitch information displayed alongside token-level transcript information.</em>
+</p>
+
 To create our dataset, we begin with podcast-level metadata from [Podcast Index](https://podcastindex.org/) and collect episode-level metadata by scraping the RSS feeds associated with each English podcast from May-June 2020. We then feed mp3 url's from these RSS feeds into a three-phase pipeline that extracts transcript, audio, and speaker-turn information. Finally, all of these data types are merged together at the episode level and speaker-turn level and [released](https://huggingface.co/datasets/blitt/SPoRC) for future non-commercial use.
 
 # Our 3-Phase Pipeline 
@@ -117,8 +134,4 @@ rm $MP3_LOC/$kURL.wav
 
 ## Final Merge
 To create a single output file with transcription, audio-feature, and speaker-turn information, we perform a final merge using [mergeDiarization.py](merging/mergeDiarization.py). This file maintains our word-level transcript and audio-feature information but adds on speaker-information as a column. When multiple speakers are overlapping, the first speaker in the list corresponds to who was had been speaking first.  
-
-## Data Quality 
-It is difficult to visualize the multi-modal output of our pipeline. To aid in the process and assess the quality of our output, we include [createDiarizationDemos.ipynb](diarizationQuality/createDiarizationDemos.ipynb). This allows one to visualize speaker overlap while listening along along with a podcast mp3 or reading along to a transcript. 
-
 
