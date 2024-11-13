@@ -1,7 +1,7 @@
 #  SPoRC: the Structured Podcast Research Corpus!
 Welcome to the github repository for the creation of SPoRC: the Structured Podcast Research Corpus!
 
-You can access our data [here](https://huggingface.co/datasets/blitt/SPoRC), our data processing pipeline [here](https://github.com/blitt2018/SPoRC_data), and our publication [here](FILL_IN).
+You can access our data [here](https://huggingface.co/datasets/blitt/SPoRC), our data analysis pipeline [here](https://github.com/blitt2018/SPoRC_analysis), and our publication [here](FILL_IN).
 
 SPoRC captures the inherently multi-modal nature of podcast data, with transcripts and metadata for over 1.1M episodes and speaker-turn and audio-feature data for over 370K episodes. As shown below, these features can be combined to provide rich insight into human communication:  
 
@@ -12,7 +12,7 @@ SPoRC captures the inherently multi-modal nature of podcast data, with transcrip
 
 <p align="center">
   <img src="/figures/transcriptHighlightingFigure.png?raw=true">
-  <em>A podcast transcript colored by speaker turns. Speaker overlap is depicted with black text.</em>
+  <em>A podcast transcript colored by speaker turns. Multiple assigned speakers are depicted with grey text and no assigned speakers are assigned black text.</em>
 </p>
 
 <p align="center">
